@@ -43,7 +43,7 @@ class EvenementController extends Controller
     {
         //
         $event=Evenement::findOrFail($id);
-        return view('events.show');
+        return view('events.show',compact('event'));
     }
 
     /**
